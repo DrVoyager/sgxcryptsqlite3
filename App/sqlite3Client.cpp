@@ -50,8 +50,10 @@
 #include <openssl/buffer.h>
 #include <stdlib.h>
 #include <math.h>
+#include<iostream>
+#include<string>
 
-
+using namespace std;
 // #define XDSGX_BLOCK_SIZE  AES_BLOCK_SIZE
 #define XDSGX_BLOCK_SIZE  65535
 #define AES_KEY_SIZE 16
@@ -526,9 +528,13 @@ int sqlite3_exec_encrypt(const char *dbname, const char *sql, const unsigned cha
     return 0;
 }
 
+
 /* Application entry */
 int SGX_CDECL main(int argc, char *argv[])
 {
+    using namespace std;
+    cout<<"this is a test!"<<endl;
+
     (void)(argc);
     (void)(argv);
     //printf("use \"-crypt_ctr\" in the end to crypt the sql\n");
@@ -923,7 +929,7 @@ int SGX_CDECL main(int argc, char *argv[])
 #endif /* SGX_CTR_TEST */
 
     
-
+#define SGX_GET_TABLE_TEST
 
 
 #ifdef SGX_GET_TABLE_TEST

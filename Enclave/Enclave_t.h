@@ -1,12 +1,11 @@
 #ifndef ENCLAVE_T_H__
 #define ENCLAVE_T_H__
-
+#define __VIVI_SGX_IN_ENCLAVE__
 #include <stdint.h>
 #include <wchar.h>
 #include <stddef.h>
 #include "sgx_edger8r.h" /* for sgx_ocall etc. */
 
-#define __VIVI_SGX_IN_ENCLAVE__
 #include "user_types.h"
 
 #include <stdlib.h> /* for size_t */

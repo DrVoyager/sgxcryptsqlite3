@@ -1,5 +1,5 @@
 #include "Enclave_t.h"
-
+#define __VIVI_SGX_IN_ENCLAVE__
 #include "sgx_trts.h" /* for sgx_ocalloc, sgx_is_outside_enclave */
 #include "sgx_lfence.h" /* for sgx_lfence */
 
